@@ -44,3 +44,20 @@
 .createchoices button:hover {
 	background-color: rgba(255, 255, 255, 0.65);
 }
+
+.createcontent {
+	margin: 30px auto;
+	font-size: 20px;
+	width: 80%;
+}
+
+.createcontent input {
+	font-size: 30px;
+	height: 30px;
+	width: 90%;
+}
+
+.createcontenttext {
+	margin-top: 20px;
+	text-align: center;
+}
