@@ -1,15 +1,15 @@
-Template.body.helpers({
-    content: function () {
-        return "CONTENT HERE";
-        //return Feelings.find({feeling : {$in: ["yay", "mad", "happy"]}}, {sort: {createdAt: -1}});
+Template.Home.events({
+    'click .feeling-button': function (event) {
+        console.log("You clicked " + event.currentTarget.innerText);
+        Router.go('/stream/' + event.currentTarget.innerText);
     }
 });
 
-Template.body.events({
-    'click .feeling-button': function (event) {
-        console.log("Event" + event);
-        Router.go('/stream');
-    }
+Template.body.helpers({
+	elements: function() {
+		var feeling = Session.get
+		return Feelings.find()
+	}
 });
 
 Router.route('/', function () {
@@ -17,4 +17,6 @@ Router.route('/', function () {
 });
 
 Router.route('/create');
-Router.route('/stream');
+Router.route('/stream/:_feeling', function () {
+    Session.set("feed-feeling", this.params._feeling); 
+});
