@@ -5,6 +5,13 @@ Template.Home.events({
     }
 });
 
+Template.Stream.helpers({
+	elements: function() {
+		var feeling = Session.get("feed-feeling");
+        return ["lol", "okay"];
+		//return Feelings.find()
+	}
+});
 
 Router.route('/', function () {
   this.render('Home');
@@ -13,6 +20,6 @@ Router.route('/', function () {
 Router.route('/create');
 Router.route('/stream/:_feeling', function () {
     console.log("stream page routing...");
-    //Session.set("feed-feeling", this.params._feeling);
+    Session.set("feed-feeling", this.params._feeling);
     this.render('Stream');
 });
