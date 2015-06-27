@@ -17,9 +17,11 @@ Template.Stream.helpers({
         return Session.get("feedfeeling");
     },
 	elements: function() {
-		var feeling = Session.get("feedfeeling");
-        return [{content : "Inspiration goes here", type: "text"}, {content : "http://goo.gl/qGXiV2", type : "image"}];
-		//return Feelings.find()
+		var tag = Session.get("feedfeeling");
+        //return [{content : "Inspiration goes here", type: "text"}, {content : "http://goo.gl/qGXiV2", type : "image"}];
+        var data = Feelings.find({feeling : tag}).content;
+        debugger;
+		return data;
 	}
 });
 
