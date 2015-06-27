@@ -37,6 +37,20 @@ Template.element.helpers({
 });
 
 //~*~*~*~*~ ADD CONTENT ~*~*~*~*~
+
+  Template.addContentForm.helpers({
+    tags: [
+      { tagName: "Happy" },
+      { tagName: "Mad" },
+      { tagName: "Isolated" },
+      { tagName: "Grumpy" },
+      { tagName: "Silly" },
+      { tagName: "Discouraged" },
+      { tagName: "Heartbroken" },
+      { tagName: "Frustrated" },
+    ]
+    });
+
 Template.addContentForm.events({
     'click .imageButton' : function () { // REPLACE AND ADD RADIO FUNCTIONALITY
         Session.set("submissionType", "image");
@@ -103,7 +117,6 @@ Template.addContentForm.events({
         });
 	}
 });
-
 
 
 // ~*~*~*~*~ROUTERS~*~*~*~*~

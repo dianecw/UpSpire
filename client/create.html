@@ -5,19 +5,42 @@
     	{{> addContentForm}}
     </div>
    </template>
-<template name="addContentForm">
-    	<form>
-    		<div class="subtitle">What would you like to share?</div>
-    		<div class="createchoices">
-    		</div>
 
-    		<div class="createcontent">
-    			<input type="text" name="content_text" />
-    			<div class="createcontenttext">
-    				Tags:
-    			</div>
-    		</div>
-    	
-    		<input type="submit" value="Submit">
-    	</form>
+<template name="addContentForm">
+	<form>
+		<div class="subtitle">What would you like to share?</div>
+		<div class="createchoices">
+			<label class="imagebutton">
+				<input type="radio" name="toggle"/>
+				<span>Image</span>
+			</label>
+			<label class="videobutton">
+				<input type="radio" name="toggle"/>
+				<span>Video</span>
+			</label>
+			<label class="textbutton">
+				<input type="radio" name="toggle"/>
+				<span>Text</span>
+			</label>
+		</div>
+
+		<div class="createcontent">
+			<input type="text" name="content_text" />
+			<div class="createcontenttext">
+				Tags:
+			</div>
+		</div>
+
+		<div class="tags">
+  			{{#each tags}}
+    			{{> tag}}
+  			{{/each}}
+    	</div>
+	
+		<button class="submitbutton">Submit</button>
+	</form>
+</template>
+
+<template name="tag">
+	<input type="checkbox" value = {{tagName}} > {{tagName}}
 </template>
