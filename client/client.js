@@ -73,7 +73,6 @@ Template.addContentForm.events({
 			var input = "";
 		}
         
-        Session.set("submissiontype", "image"); // REPLACE
 		var content_type = Session.get("submissiontype"); // REPLACE
 		if (content_type) {                       // set the content type
 			var type = content_type;
