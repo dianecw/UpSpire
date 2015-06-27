@@ -24,29 +24,43 @@
 }
 
 .createchoices {
-	font-size: 20px;
 	margin-top: 25px;
 }
 
-.createchoices button {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 28px;
+.createchoices label {
 	width: 120px;
-	background-color: rgba(255, 255, 255, 0.4);
+	height: 45px;
+	margin: 0px 20px;
 	border: none;
-	border-radius: 5px;
 	cursor: pointer;
-	margin: 0px 10px;
-	padding: 5px;
 }
 
-.createchoices button:hover {
-	background-color: rgba(255, 255, 255, 0.65);
+.createchoices label span {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 35px;
+}
+
+.createchoices label input {
+	position: absolute;
+	top: -20px;
+}
+
+.createchoices label:hover {
+	color: white;
+}
+
+.createchoices input:checked + span {
+	width: 120px;
+	margin: 0px 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .createcontent {
-	margin: 30px auto;
+	margin: 50px auto;
 	font-size: 20px;
 	width: 80%;
 }
@@ -60,4 +74,18 @@
 .createcontenttext {
 	margin-top: 20px;
 	text-align: center;
+}
+
+.submitbutton {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	padding: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: none;
+	border-radius: 5px;
+}
+
+.submitbutton:hover {
+	background-color: rgba(153, 204, 255, 0.7);
 }
