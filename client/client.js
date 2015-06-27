@@ -5,6 +5,13 @@ Template.Home.events({
     }
 });
 
+Template.body.helpers({
+	elements: function() {
+		var feeling = Session.get
+		return Feelings.find()
+	}
+});
+
 Router.route('/', function () {
   this.render('Home');
 });
