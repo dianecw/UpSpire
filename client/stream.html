@@ -9,7 +9,26 @@
 </template>
 
 <template name="element">
-	<div class="element" data-id="{{ _id }}">
-		<!-- Need to figure out how to embed different types of content.-->
+	<div class="element">
+		{{ #if isText type }}
+			{{ >text }}
+		{{ else }} {{ #if isImage type }}
+			{{ >image }}
+		{{ else }} {{ #if isVideo type }}
+			{{ >video }}
+		{{ /if }}{{ /if }} {{ /if }}
 	</div>
+</template>
+
+<template name="text">
+	<p class="text-element">{{ content }}</p>
+</template>
+
+<template name="video">
+	<google-youtube video-id={{ content }} height="270px" width="480px"></google-youtube>
+	VIDEO
+</template>
+
+<template name="image">
+	<img class="img-element" src={{ content }} />
 </template>
