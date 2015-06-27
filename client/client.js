@@ -12,9 +12,16 @@ Template.body.events({
     }
 });
 
+Template.body.helpers({
+	elements: function() {
+		var feeling = Session.get
+		return Feelings.find()
+	}
+});
+
 Router.route('/', function () {
   this.render('Home');
 });
 
 Router.route('/create');
-Router.route('/stream');
+Router.route('/stream/:feeling', function());
