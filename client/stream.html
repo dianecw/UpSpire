@@ -9,7 +9,25 @@
 </template>
 
 <template name="element">
-	<div class="element" data-id="{{ _id }}">
-		<!-- Need to figure out how to embed different types of content.-->
+	<div class="element">
+		{{ #if isText type }}
+			{{ >text }}
+		{{ else }} {{ #if isImage type }}
+			{{ >image }}
+		{{ else }} {{ #if isVideo type }}
+			{{ >video }}
+		{{ /if }}{{ /if }} {{ /if }}
 	</div>
+</template>
+
+<template name="text">
+	<p>{{ content }}</p>
+</template>
+
+<template name="video">
+
+</template>
+
+<template name="image">
+	<img class="img-element" src={{ content }} />
 </template>
