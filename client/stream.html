@@ -1,15 +1,34 @@
 <template name="Stream">
-    <div class="header-bar">
+    <div class="headerbar">
         APPNAME- Stream Page
     </div>
-	<h1><a href="/create">[Emotion- Stream Page]</a></h1>
+	<h1><a href="#">What helps you when you're {{getFeeling}}</a></h1>
 	{{ #each elements }}
 		{{ >element }}
 	{{ /each }}
 </template>
 
 <template name="element">
-	<div class="element" data-id="{{ _id }}">
-		<!-- Need to figure out how to embed different types of content.-->
+	<div class="element">
+		{{ #if isText type }}
+			{{ >text }}
+		{{ else }} {{ #if isImage type }}
+			{{ >image }}
+		{{ else }} {{ #if isVideo type }}
+			{{ >video }}
+		{{ /if }}{{ /if }} {{ /if }}
 	</div>
+</template>
+
+<template name="text">
+	<p class="textelement">{{ content }}</p>
+</template>
+
+<template name="video">
+	<iframe width="560" height="315" src={{ content }} frameborder="0" allowfullscreen>
+	</iframe>
+</template>
+
+<template name="image">
+	<img class="imgelement" src={{ content }} />
 </template>

@@ -1,3 +1,50 @@
+@font-face {
+	font-family: Olivier;
+	src: url('client/olivier.ttf') format('truetype');
+}
+
+html {
+	min-height: 100%;
+}
+
 body {
 	background: linear-gradient(0deg, #fef3d0, #3396bb);
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+
+h1 {
+	color: #fff;
+	font-family: Olivier;
+	font-size: 60px;
+	margin: 15%;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+.feelingbutton {
+	background-color: rgba(255, 255, 255, 0.4);
+	border: none;
+	border-radius: 15px;
+	display: inline-block;
+	opacity: 50%;
+	padding: 10px;
+	position: relative;
+	text-decoration: none;
+}
+
+.feelingbutton a:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.createbutton {
+	padding: 10px;
+}
+
+.emotionscontainer {
+	padding: 20px;
 }

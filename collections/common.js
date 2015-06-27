@@ -1,5 +1,5 @@
 var contentSchema = new SimpleSchema({
-    element: {
+    element: { // http://goo.gl/qGXiV2
        type: String,
        label: "Element"
     },
@@ -15,7 +15,7 @@ var contentSchema = new SimpleSchema({
 });
 
 var feelingSchema = new SimpleSchema({
-    feeling: {
+    feeling: { // "happy", "sad", "left out"
        type: String,
        label: "Feeling",
     },

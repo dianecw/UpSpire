@@ -1,7 +1,50 @@
-html {
-    min-height: 100%;
+.create-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0);
+
+	padding: 15px 20px;
+	font-size: 20px;
+	text-align: left;
 }
 
 .create-container {
-    padding: 5px 30px;
+	margin-top: 50px;
+    padding: 10px 15px;
+    font-size: 35px;
+}
+
+.subtitle {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.create-choices {
+	font-size: 20px;
+	margin-top: 25px;
+}
+
+.create-choices button {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 28px;
+	width: 120px;
+	background-color: rgba(255, 255, 255, 0.4);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 0px 10px;
+	padding: 5px;
+}
+
+.create-choices button:hover {
+	background-color: rgba(255, 255, 255, 0.65);
+}
+
+.create-content {
+	display: none;
 }
