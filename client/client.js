@@ -3,8 +3,13 @@ Template.Home.helpers({
     feelings: function() {
 		//var feeling = Session.get("feedfeeling");
         return [{feeling : "Happy"},
-                {feeling : "Sad"},
-                {feeling : "Mad"}];
+                {feeling : "Mad"},
+                {feeling : "Isolated"},
+                {feeling : "Grumpy"},
+                {feeling : "Silly"},
+                {feeling : "Discouraged"},
+                {feeling : "Heartbroken"},
+                {feeling : "Frustrated"}]
 	}
 });
 
@@ -74,8 +79,11 @@ Template.addContentForm.events({
 		} else {
 			var type = "text"; // default to text submission type
 		}
+		content_tags = $('input:checkbox:checked.prettytags').map(function () {
+  			return this.name;
+			}).get();
+		console.log("tags selected: " + content_tags);
 
-		var content_tags = ["Happy", "Sad"]; // REPLACE - get tags!
 		if (content_tags) {                       // set the feeling tags
 			var tags = content_tags;
 		} else {
