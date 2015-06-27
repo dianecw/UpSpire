@@ -1,6 +1,7 @@
 @font-face {
 	font-family: Olivier;
 	src: url('client/olivier.ttf');
+	src: url('client/olivier.tff') format('truetype');
 }
 
 html {
