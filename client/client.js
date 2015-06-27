@@ -61,6 +61,7 @@ Template.addContentForm.events({
         var type = template.find('input:radio[name=toggle]:checked');
         Session.set("submissiontype", $(type).val());
         console.log("submissiontype set to " + Session.get("submissiontype"));
+        Router.go("/");
     },
 	'submit form': function(){
 		event.preventDefault();
@@ -80,9 +81,11 @@ Template.addContentForm.events({
 			var type = "text"; // default to text submission type
 		}
     
-		content_tags = $('input:checkbox:checked.prettytags').map(function () {
-  			return this.name;
-			}).get();
+		var raw_content_tags = $('input:checkbox:checked');
+        var content_tags = [];
+        raw_content_tags.map(function () {
+  			content_tags.push(this.value);
+        });
 		console.log("tags selected: " + content_tags);
 
 		if (content_tags) {                       // set the feeling tags
