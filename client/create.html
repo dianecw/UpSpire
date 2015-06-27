@@ -11,15 +11,15 @@
 		<div class="subtitle">What would you like to share?</div>
 		<div class="createchoices">
 			<label class="imagebutton">
-				<input type="radio" name="toggle"/>
+				<input type="radio" name="toggle" value="image"/>
 				<span>Image</span>
 			</label>
 			<label class="videobutton">
-				<input type="radio" name="toggle"/>
+				<input type="radio" name="toggle" value="video"/>
 				<span>Video</span>
 			</label>
 			<label class="textbutton">
-				<input type="radio" name="toggle"/>
+				<input type="radio" name="toggle" value="text"/>
 				<span>Text</span>
 			</label>
 		</div>
@@ -42,5 +42,6 @@
 </template>
 
 <template name="tag">
-	<input type="checkbox" class="prettytags" name ={{tagName}}> {{tagName}}
+	<input class="prettytags" type="checkbox" value = {{tagName}} /> {{tagName}}
 </template>
+>>>>>>> e8c2ba7e1b2792c2e1df10926518bac3ea441b79

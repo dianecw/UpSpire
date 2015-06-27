@@ -52,8 +52,10 @@ Template.element.helpers({
     });
 
 Template.addContentForm.events({
-    'click .imageButton' : function () { // REPLACE AND ADD RADIO FUNCTIONALITY
-        Session.set("submissionType", "image");
+    'click .submitbutton' : function(event, template) {
+        var type = template.find('input:radio[name=toggle]:checked');
+        Session.set("submissiontype", $(type).val());
+        console.log("submissiontype set to " + Session.get("submissiontype"));
     },
 	'submit form': function(){
 		event.preventDefault();
