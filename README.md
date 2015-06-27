@@ -7,3 +7,6 @@ Run ```meteor``` in your terminal
 
 To deploy:
 ```meteor deploy bobaroos.meteor.com```
+
+Packages used:
+iron:Router
