@@ -5,11 +5,14 @@ Template.Home.events({
     }
 });
 
+
 Router.route('/', function () {
   this.render('Home');
 });
 
 Router.route('/create');
 Router.route('/stream/:_feeling', function () {
-    Session.set("feed-feeling", this.params._feeling); 
+    console.log("stream page routing...");
+    //Session.set("feed-feeling", this.params._feeling);
+    this.render('Stream');
 });
