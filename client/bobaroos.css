@@ -64,6 +64,10 @@ a {
 	padding: 20px;
 }
 
+.createbutton:hover {
+	color: #246983;
+}
+
 .emotionscontainer {
 	display: block;
 	margin: auto;
