@@ -4,30 +4,24 @@
     <link rel="stylesheet" type="text/css" href="bobaroos.css"/>
 </head>
 
+<<<<<<< HEAD
 <body>
 <div class="container">
 </div>
 </body>
 
+=======
+>>>>>>> 9ee3d6c280666b9df582e64e8fe97eb751f88d49
 <template name="Home">
-    {{> Navigation}}
     <h1>I'm feeling...</h1>
+    <div>
+    	<!-- {{#each emotion}}
+    		{{> emotion-button}}
+    	{{/each}} -->
+    </div>
+    <div><a href="/create">Share some happiness with others!</a></div>
 </template>
 
-<template name="Create">
-	{{> Navigation}}
-	<h1>Share some happiness!</h1>
-</template>
-
-<template name="Stream">
-	{{> Navigation}}
-	<h1>[Emotion]</h1>
-</template>
-
-<template name="Navigation">
-	<ul>
-		<li><a href="/">Home</a></li>
-		<li><a href="/create">Create</a></li>
-		<li><a href="/stream">Stream</a></li>
-	</ul>
+<template name="emotion-button">
+	<!-- <input class="feelings-button" type="button">{{ emotion }}</input> -->
 </template>
