@@ -3,7 +3,7 @@
 }
 
 .streamcontainer {
-	margin-top: 50px;
+	margin-top: 5px;
 	margin-right: 50px;
 	margin-left: 50px;
     padding: 10px 15px;
@@ -32,4 +32,23 @@
 
 .textelement {
 	color: black;
+}
+
+.logo {
+	color: white;
+}
+
+.feelingcontainer {
+	display: inline-block;
+}
+
+.feelingtext {
+	display: inline;
+	color: #2f87af;
+	font-weight: normal;
+}
+
+.feelingdropdown {
+	display: inline;
+	color: #2f87af;
 }
