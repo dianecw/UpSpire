@@ -11,16 +11,15 @@ Template.Home.helpers({
 //~*~*~*~*~ STREAM ~*~*~*~*~
 Template.Stream.helpers({
     getFeeling : function() {
-        return Session.get("feedfeeling");
+        return Session.get("feedfeeling").toLowerCase();
     },
 	elements: function() {
 		var tag = Session.get("feedfeeling");
         console.log("Querying for tag: " + tag);
-        //return [{content : "Inspiration goes here", type: "text"}, {content : "http://goo.gl/qGXiV2", type : "image"}];
-        debugger;
+//        var data = [{content : "Inspiration goes here", type: "text"}, {content : "http://goo.gl/qGXiV2", type : "image"}];
         var data = Feelings.findOne({feeling : tag}).content;
+        console.log("Data (line below)");
         console.log(data);
-        debugger;
 		return data;
 	}
 });
@@ -73,7 +72,7 @@ Template.addContentForm.events({
 		} else {
 			var type = "text"; // default to text submission type
 		}
-		content_tags = $('input:checkbox:checked.check_tags').map(function () {
+		content_tags = $('input:checkbox:checked.prettytags').map(function () {
   			return this.name;
 			}).get();
 		console.log("tags selected: " + content_tags);

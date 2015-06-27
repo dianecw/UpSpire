@@ -1,21 +1,25 @@
 <template name="Stream">
-	<div id='navigationbar'>
-		<ul>
-		   <li><h1 class="logo">UpSpire</h1></li>
-		   <li class='active'><a href='/'><span>Home</span></a></li>
-		   <li><a href='/create'><span>Create</span></a></li>
-		</ul>
-	</div>
+	{{ >navbar }}
     <div class="streamcontainer">
     	<div class="feelingcontainer">
 			<h3 class="feelingtext">What helps you when you're feeling...</h3>
-			<h3 class="feelingdropdown">{{ getFeeling }}</h3>
+			<h3 class="feelingdropdown">{{ getFeeling }}?</h3>
 		</div>
 		{{ #each elements }}
 			{{ >element }}
 			<hr>
 		{{ /each }}
 	</div>
+</template>
+
+<template name="navbar">
+<div id='navigationbar'>
+	<img class="logo-nav" src="logo.png"/>
+	<ul>
+	   <li class='active'><a href='/'><span>Home</span></a></li>
+	   <li><a href='/create'><span>Create</span></a></li>
+	</ul>
+</div>
 </template>
 
 <template name="element">
@@ -31,14 +35,14 @@
 </template>
 
 <template name="text">
-	<p class="textelement">{{ content }}</p>
+	<p class="textelement">{{ element }}</p>
 </template>
 
 <template name="video">
-	<iframe class="videoelement" width="560" height="315" src={{ content }} frameborder="0" allowfullscreen>
+	<iframe class="videoelement" width="560" height="315" src={{ element }} frameborder="0" allowfullscreen>
 	</iframe>
 </template>
 
 <template name="image">
-	<img class="imageelement" src={{ content }} />
+	<img class="imageelement" src={{ element }} />
 </template>
