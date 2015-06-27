@@ -17,7 +17,7 @@ Template.Home.events({
 Template.Stream.helpers({
 	elements: function() {
 		var feeling = Session.get("feed-feeling");
-        return [{element : "CATPIC", type: "woot"}, {content : "ok"}];
+        return [{content : "https://www.youtube.com/embed/O1KW3ZkLtuo", type: "video"}, {content : "ok", type: "text"}];
 		//return Feelings.find()
 	}
 });
