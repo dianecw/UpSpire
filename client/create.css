@@ -30,6 +30,7 @@
 
 .create-choices button {
 	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	font-size: 28px;
 	width: 120px;
 	background-color: rgba(255, 255, 255, 0.4);
@@ -41,5 +42,9 @@
 }
 
 .create-choices button:hover {
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.65);
+}
+
+.create-content {
+	display: none;
 }
