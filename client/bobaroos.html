@@ -3,16 +3,27 @@
 </head>
 
 <body>
-    <h1>Welcome to APPNAME!</h1>
-    <form class="feeling-submission">
-        <input type="text" name="feeling" placeholder="How are you feeling?" />
-    </form>
-    {{#each feelings}}
-        {{> expression}}
-    {{/each}}
 </body>
 
-<template name="expression">
-    Hey!
-    <p> Wow, you're feeling {{feeling}}</p>
+<template name="Home">
+    {{> Navigation}}
+    <h1>I'm feeling...</h1>
+</template>
+
+<template name="Create">
+	{{> Navigation}}
+	<h1>Share some happiness!</h1>
+</template>
+
+<template name="Stream">
+	{{> Navigation}}
+	<h1>[Emotion]</h1>
+</template>
+
+<template name="Navigation">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/create">Create</a></li>
+		<li><a href="/stream">Stream</a></li>
+	</ul>
 </template>

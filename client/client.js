@@ -4,17 +4,22 @@ Template.body.helpers({
     }
 });
 
-Template.body.events({
-    'submit .feeling-submission': function () {
-        // Executed when form is submitted
-        var input = event.target.feeling.value;
-        Feelings.insert({
-            feeling: input,
-            createdAt: new Date()
-        });
-        event.target.feeling.value("done");
-        return false; // prevent default form behavior
-    }
+//Template.body.events({
+//    'submit .feeling-submission': function () {
+//        // Executed when form is submitted
+//        var input = event.target.feeling.value;
+//        Feelings.insert({
+//            feeling: input,
+//            createdAt: new Date()
+//        });
+//        event.target.feeling.value("done");
+//        return false; // prevent default form behavior
+//    }
+//});
+
+Router.route('/', function () {
+  this.render('Home');
 });
 
-Session.set("hideCompleted", event.target.checked);
+Router.route('/create');
+Router.route('/stream');
