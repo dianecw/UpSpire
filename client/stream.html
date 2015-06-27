@@ -1,15 +1,21 @@
 <template name="Stream">
-    <div class="headerbar">
-        APPNAME- Stream Page
-    </div>
-	<h1><a href="#">What helps you when you're {{getFeeling}}</a></h1>
-	{{ #each elements }}
-		{{ >element }}
-	{{ /each }}
+<!-- 	<div id='cssmenu'>
+	<ul>
+	   <li class='active'><a href='/'><span>Home</span></a></li>
+	   <li><a href='/create'><span>Create</span></a></li>
+	</ul>
+	</div> -->
+    <div class="streamcontainer">
+		<h2><a class="streamheader" href="#">What helps you when you're {{getFeeling}}</a></h2>
+		{{ #each elements }}
+			{{ >element }}
+			<hr>
+		{{ /each }}
+	</div>
 </template>
 
 <template name="element">
-	<div class="element">
+	<div class="streamelement">
 		{{ #if isText type }}
 			{{ >text }}
 		{{ else }} {{ #if isImage type }}
@@ -25,10 +31,10 @@
 </template>
 
 <template name="video">
-	<iframe width="560" height="315" src={{ content }} frameborder="0" allowfullscreen>
+	<iframe class="videoelement" width="560" height="315" src={{ content }} frameborder="0" allowfullscreen>
 	</iframe>
 </template>
 
 <template name="image">
-	<img class="imgelement" src={{ content }} />
+	<img class="imageelement" src={{ content }} />
 </template>
