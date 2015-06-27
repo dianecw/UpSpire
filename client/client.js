@@ -7,7 +7,7 @@ Template.body.helpers({
 
 Template.body.events({
     'click .feeling-button': function (event) {
-        console.log("Event" + event);
+        console.log("You clicked " + event.currentTarget.innerText);
         Router.go('/stream');
     }
 });

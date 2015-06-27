@@ -2,9 +2,12 @@
     <title>bobaroos</title>
 </head>
 
+<body>
+    {{> Home}}
+</body>
 <template name="Home">
     <h1>I'm feeling...</h1>
-    <input class="feeling-button" type="button" value="HAPPEH">
+    <button class="feeling-button" id="SAD">SAD</button>
     <div>
     	<!-- {{#each emotion}}
     		{{> emotion-button}}
