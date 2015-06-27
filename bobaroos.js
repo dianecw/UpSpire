@@ -3,7 +3,7 @@ Feelings = new Mongo.Collection("feelings");
 if (Meteor.isClient) {
     Template.body.helpers({
       feelings: function () {
-        return Feelings.find({}, {sort: {createdAt: -1}});
+        return Feelings.find({feeling : {$in: ["yay", "mad", "happy"]}}, {sort: {createdAt: -1}});
       }
     });
 
