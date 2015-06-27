@@ -3,4 +3,13 @@
         APPNAME- Stream Page
     </div>
 	<h1><a href="/create">[Emotion- Stream Page]</a></h1>
+	{{ #each elements }}
+		{{ >element }}
+	{{ /each }}
+</template>
+
+<template name="element">
+	<div class="element" data-id="{{ _id }}">
+		<!-- Need to figure out how to embed different types of content.-->
+	</div>
 </template>
