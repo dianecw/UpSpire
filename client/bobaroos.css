@@ -1,3 +1,7 @@
+html {
+	min-height: 100%;
+}
+
 body {
-  background: linear-gradient(0deg, #fef3d0, #3396bb);
+	background: linear-gradient(0deg, #fef3d0, #3396bb);
 }
