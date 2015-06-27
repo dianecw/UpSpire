@@ -2,10 +2,14 @@
 	<div class="create-container">
 		<div class="create-logo"><a href="/">APPNAME</a></div>
     	<h1>Share some happiness!</h1>
-    	<form>
-    		<input type="text" name="content_text" />
-    		<input type="text" name="content_tags" />
-    		<input type="submit" value="Submit" />
-    	</form>
+    	{{> addContentForm}}
     </div>
+</template>
+
+<template name="addContentForm">
+<form>
+	<input type="text" name="content_text">
+	<input type="text" name="content_tags">
+	<input type="submit" value="Submit">
+</form>
 </template>

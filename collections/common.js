@@ -7,6 +7,10 @@ var contentSchema = new SimpleSchema({
         type: String,
         label: "Type",
         max: 20
+    },
+    sentiment_score: {
+        type: Number,
+        label: "Sentiment"
     }
 });
 
