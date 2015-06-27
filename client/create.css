@@ -17,6 +17,10 @@
     font-size: 35px;
 }
 
+form {
+	padding: 20px;
+}
+
 .subtitle {
 	margin-top: 10px 0px;
 	font-size: 25px;
@@ -52,7 +56,7 @@
 }
 
 .createchoices input:checked + span {
-	color: #99FFFF;
+	color: #fef3d0;
 	font-weight: bold;
 }
 
@@ -78,19 +82,20 @@
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 20px;
-	padding: 5px;
-	background-color: rgba(255, 255, 255, 0.8);
+	color: #fff;
+	padding: 10px;
+	background-color: rgba(51, 150, 187, 0.7);
 	border: none;
-	border-radius: 5px;
+	border-radius: 15px;
 }
 
 .submitbutton:hover {
-	background-color: rgba(153, 255, 255, 0.7);
+	background-color: rgba(51, 150, 187, 0.5);
 }
 
 .tags {
 	margin: 0 auto;
-	width: 40%;
+	max-width: 500px;
 	font-size: 20px;
 	text-align: center;
 	line-height: 20px;
