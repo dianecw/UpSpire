@@ -1,4 +1,4 @@
-.create-header {
+.createheader {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -11,7 +11,7 @@
 	text-align: left;
 }
 
-.create-container {
+.createcontainer {
 	margin-top: 50px;
     padding: 10px 15px;
     font-size: 35px;
@@ -23,12 +23,12 @@
 	font-size: 25px;
 }
 
-.create-choices {
+.createchoices {
 	font-size: 20px;
 	margin-top: 25px;
 }
 
-.create-choices button {
+.createchoices button {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 28px;
@@ -41,10 +41,23 @@
 	padding: 5px;
 }
 
-.create-choices button:hover {
+.createchoices button:hover {
 	background-color: rgba(255, 255, 255, 0.65);
 }
 
-.create-content {
-	display: none;
+.createcontent {
+	margin: 30px auto;
+	font-size: 20px;
+	width: 80%;
+}
+
+.createcontent input {
+	font-size: 30px;
+	height: 30px;
+	width: 90%;
+}
+
+.createcontenttext {
+	margin-top: 20px;
+	text-align: center;
 }
