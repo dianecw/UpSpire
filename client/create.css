@@ -40,6 +40,7 @@
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 35px;
+	margin: 30px;
 }
 
 .createchoices label input {
@@ -52,15 +53,13 @@
 }
 
 .createchoices input:checked + span {
-	width: 120px;
-	margin: 0px 10px;
 	border: none;
 	border-radius: 5px;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(214, 235, 255, 0.6);
 }
 
 .createcontent {
-	margin: 50px auto;
+	margin: 50px auto 0px auto;
 	font-size: 20px;
 	width: 80%;
 }
@@ -88,4 +87,14 @@
 
 .submitbutton:hover {
 	background-color: rgba(153, 204, 255, 0.7);
+}
+
+.tags {
+	margin: 0 auto;
+	width: 35%;
+	font-size: 20px;
+}
+
+.prettytags {
+	background-color: white;
 }
