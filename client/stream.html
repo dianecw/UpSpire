@@ -1,12 +1,16 @@
 <template name="Stream">
-<!-- 	<div id='cssmenu'>
-	<ul>
-	   <li class='active'><a href='/'><span>Home</span></a></li>
-	   <li><a href='/create'><span>Create</span></a></li>
-	</ul>
-	</div> -->
+	<div id='navigationbar'>
+		<ul>
+		   <li><h1 class="logo">UpSpire</h1></li>
+		   <li class='active'><a href='/'><span>Home</span></a></li>
+		   <li><a href='/create'><span>Create</span></a></li>
+		</ul>
+	</div>
     <div class="streamcontainer">
-		<h2><a class="streamheader" href="#">What helps you when you're {{getFeeling}}</a></h2>
+    	<div class="feelingcontainer">
+			<h3 class="feelingtext">What helps you when you're feeling...</h3>
+			<h3 class="feelingdropdown">{{ getFeeling }}</h3>
+		</div>
 		{{ #each elements }}
 			{{ >element }}
 			<hr>

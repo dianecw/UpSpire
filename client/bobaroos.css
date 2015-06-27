@@ -1,9 +1,3 @@
-@font-face {
-	font-family: Olivier;
-	src: url('client/olivier.ttf');
-	src: url('client/olivier.tff') format('truetype');
-}
-
 html {
 	min-height: 100%;
 }
@@ -15,16 +9,23 @@ body {
 	text-align: center;
 }
 
-h1 {
-	color: #fff;
-	font-family: Olivier;
-	font-size: 60px;
-	margin-top: 15%;
-	position: relative;
-}
-
 a {
 	text-decoration: none;
+}
+
+.logo {
+	display: block;
+	margin-top: 5%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	text-align: center;
+}
+
+.imfeeling {
+	margin-top: 5%;
+	padding: 10px;
+	position: relative;
 }
 
 .feelingbutton {
@@ -45,9 +46,68 @@ a {
 
 .createbutton {
 	color: #3396bb;
+	display: block;
 	padding: 20px;
 }
 
 .emotionscontainer {
-	padding: 20px;
+	display: block;
+	margin: auto;
+	padding: 30px;
+	position: relative;
+	text-align: center;
+	width: 500px;
+}
+
+.navigationbar {
+	background-color: white;
+	width: auto;
+}
+
+#navigationbar ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 50px;
+	line-height: 1;
+	display: block;
+	zoom: 1;
+	text-align: left;
+}
+
+#navigationbar ul:after {
+	content: " ";
+	display: block;
+	font-size: 0;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#navigationbar ul li {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+#navigationbar ul li h1 {
+}
+
+#navigationbar ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	padding: 15px 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 14px;
+	position: relative;
+	-webkit-transition: color .25s;
+	-moz-transition: color .25s;
+	-ms-transition: color .25s;
+	-o-transition: color .25s;
+	transition: color .25s;
+}
+
+#navigationbar ul li a:hover {
+	color: #efefef;
 }
