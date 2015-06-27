@@ -13,8 +13,17 @@ a {
 	text-decoration: none;
 }
 
+.logo {
+	display: block;
+	margin-top: 5%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	text-align: center;
+}
+
 .imfeeling {
-	margin-top: 15%;
+	margin-top: 5%;
 	padding: 10px;
 	position: relative;
 }
@@ -44,7 +53,7 @@ a {
 .emotionscontainer {
 	display: block;
 	margin: auto;
-	padding: 50px;
+	padding: 30px;
 	position: relative;
 	text-align: center;
 	width: 500px;
