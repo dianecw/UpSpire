@@ -1,11 +1,5 @@
 <template name="Stream">
-	<div id='navigationbar'>
-		<ul>
-		   <li><h1 class="logo">UpSpire</h1></li>
-		   <li class='active'><a href='/'><span>Home</span></a></li>
-		   <li><a href='/create'><span>Create</span></a></li>
-		</ul>
-	</div>
+	{{ >navbar }}
     <div class="streamcontainer">
     	<div class="feelingcontainer">
 			<h3 class="feelingtext">What helps you when you're feeling...</h3>
@@ -16,6 +10,16 @@
 			<hr>
 		{{ /each }}
 	</div>
+</template>
+
+<template name="navbar">
+<div id='navigationbar'>
+	<img class="logo-nav" src="logo.png"/>
+	<ul>
+	   <li class='active'><a href='/'><span>Home</span></a></li>
+	   <li><a href='/create'><span>Create</span></a></li>
+	</ul>
+</div>
 </template>
 
 <template name="element">
