@@ -37,3 +37,18 @@
 .logo {
 	color: white;
 }
+
+.feelingcontainer {
+	display: inline-block;
+}
+
+.feelingtext {
+	display: inline;
+	color: #2f87af;
+	font-weight: normal;
+}
+
+.feelingdropdown {
+	display: inline;
+	color: #2f87af;
+}
