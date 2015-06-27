@@ -10,7 +10,24 @@
 
 <template name="element">
 	<div class="element">
-        <h1>{{element}} {{type}}</h1>
-		<!-- Need to figure out how to embed different types of content.-->
+		{{ #if isText type }}
+			{{ >text }}
+		{{ else }} {{ #if isImage type }}
+			{{ >image }}
+		{{ else }} {{ #if isVideo type }}
+			{{ >video }}
+		{{ /if }}{{ /if }} {{ /if }}
 	</div>
+</template>
+
+<template name="text">
+	<p class="text-element">{{ content }}</p>
+</template>
+
+<template name="video">
+
+</template>
+
+<template name="image">
+	<img class="img-element" src={{ content }} />
 </template>
