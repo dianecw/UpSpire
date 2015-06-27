@@ -22,6 +22,16 @@ a {
 	text-align: center;
 }
 
+.logo-nav {
+	display: block;
+	margin-top: 1%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	text-align: center;
+	height: 50%;
+}
+
 .imfeeling {
 	margin-top: 5%;
 	padding: 10px;
@@ -38,6 +48,10 @@ a {
 	padding: 10px;
 	position: relative;
 	text-decoration: none;
+}
+
+.feelingbutton:hover {
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .feelingbutton a:hover {
@@ -62,16 +76,16 @@ a {
 .navigationbar {
 	background-color: white;
 	width: auto;
+	text-align: center;
 }
 
 #navigationbar ul {
 	list-style: none;
 	margin: 0;
-	padding-left: 50px;
 	line-height: 1;
-	display: block;
 	zoom: 1;
-	text-align: left;
+	text-align: center;
+	padding-right: 30px;
 }
 
 #navigationbar ul:after {
@@ -85,27 +99,20 @@ a {
 
 #navigationbar ul li {
 	display: inline-block;
-	padding: 0;
 	margin: 0;
-}
-
-#navigationbar ul li h1 {
+	text-align: center;
 }
 
 #navigationbar ul li a {
 	color: #ffffff;
 	text-decoration: none;
 	display: block;
-	padding: 15px 25px;
+	padding: 0px 10px 10px 10px;
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 14px;
 	position: relative;
-	-webkit-transition: color .25s;
-	-moz-transition: color .25s;
-	-ms-transition: color .25s;
-	-o-transition: color .25s;
-	transition: color .25s;
+	text-align: center;
 }
 
 #navigationbar ul li a:hover {
