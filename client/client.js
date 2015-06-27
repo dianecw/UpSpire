@@ -49,7 +49,7 @@ Template.element.helpers({
       { tagName: "Heartbroken" },
       { tagName: "Frustrated" },
     ]
-    });
+});
 
 Template.addContentForm.events({
     'click .submitbutton' : function(event, template) {
@@ -74,6 +74,7 @@ Template.addContentForm.events({
 		} else {
 			var type = "text"; // default to text submission type
 		}
+    
 		content_tags = $('input:checkbox:checked.prettytags').map(function () {
   			return this.name;
 			}).get();
@@ -90,7 +91,7 @@ Template.addContentForm.events({
         
         content_tags.forEach( function (tag) { // add content to all selected tags
             if (Feelings.findOne({feeling : tag})) {
-                console.log('Feeling in database, pushing new element to feeling');
+                console.log(tag + " in database, pushing new element to " + tag);
                 Feelings.update(
                     Feelings.findOne({feeling : tag})['_id'],
                     { $push: { content: 
@@ -104,7 +105,7 @@ Template.addContentForm.events({
                     }
                 );
             } else {
-                console.log('Feeling not in database, adding new feeling');
+                console.log(tag + " not in database, adding " + tag);
                 Feelings.insert({feeling : tag, content: [   			
                     { element : input,
                         type : content_type,
