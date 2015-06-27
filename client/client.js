@@ -5,7 +5,7 @@ Template.Home.helpers({
         return [{feeling : "Happy"},
                 {feeling : "Mad"},
                 {feeling : "Isolated"},
-                {feeling : "Grumpty"},
+                {feeling : "Grumpy"},
                 {feeling : "Silly"},
                 {feeling : "Discouraged"},
                 {feeling : "Heartbroken"},
