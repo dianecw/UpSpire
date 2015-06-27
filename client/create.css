@@ -12,14 +12,13 @@
 }
 
 .createcontainer {
-	margin-top: 50px;
+	margin-top: 20px;
     padding: 10px 15px;
     font-size: 35px;
 }
 
 .subtitle {
-	margin-top: 25px;
-	margin-bottom: 10px;
+	margin-top: 10px 0px;
 	font-size: 25px;
 }
 
@@ -53,13 +52,12 @@
 }
 
 .createchoices input:checked + span {
-	border: none;
-	border-radius: 5px;
-	background-color: rgba(214, 235, 255, 0.6);
+	color: #99FFFF;
+	font-weight: bold;
 }
 
 .createcontent {
-	margin: 50px auto 0px auto;
+	margin: 35px auto 0px auto;
 	font-size: 20px;
 	width: 80%;
 }
@@ -68,11 +66,25 @@
 	font-size: 30px;
 	height: 30px;
 	width: 90%;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid white;
 }
 
 .createcontenttext {
 	margin-top: 20px;
 	text-align: center;
+}
+
+.tags {
+	margin: 5px auto;
+	width: 50%;
+	font-size: 20px;
+	text-align: center;
+}
+
+.prettytags {
+	display: inline-block;
+	margin: 0px 0px 10px 10px;
 }
 
 .submitbutton {
@@ -87,17 +99,5 @@
 }
 
 .submitbutton:hover {
-	background-color: rgba(153, 204, 255, 0.7);
-}
-
-.tags {
-	margin: 0 auto;
-	width: 40%;
-	font-size: 20px;
-	text-align: center;
-	line-height: 20px;
-}
-
-.prettytags {
-	margin: 0px 0px 10px 10px;
+	background-color: rgba(153, 255, 255, 0.7);
 }

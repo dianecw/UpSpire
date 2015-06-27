@@ -64,13 +64,17 @@ a {
 	padding: 20px;
 }
 
+.createbutton:hover {
+	color: #246983;
+}
+
 .emotionscontainer {
 	display: block;
 	margin: auto;
 	padding: 30px;
 	position: relative;
 	text-align: center;
-	width: 500px;
+	max-width: 500px;
 }
 
 .navigationbar {

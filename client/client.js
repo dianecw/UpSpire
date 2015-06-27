@@ -3,8 +3,13 @@ Template.Home.helpers({
     feelings: function() {
 		//var feeling = Session.get("feedfeeling");
         return [{feeling : "Happy"},
-                {feeling : "Sad"},
-                {feeling : "Mad"}];
+                {feeling : "Mad"},
+                {feeling : "Isolated"},
+                {feeling : "Grumpy"},
+                {feeling : "Silly"},
+                {feeling : "Discouraged"},
+                {feeling : "Heartbroken"},
+                {feeling : "Frustrated"}]
 	}
 });
 

@@ -1,10 +1,10 @@
 <template name="Create">
-	<div class="createheader"><a href="/">APPNAME</a></div>
+	{{ >navbar }}
 	<div class="createcontainer">
     	<div>Spread the joy!</div>
     	{{> addContentForm}}
     </div>
-   </template>
+</template>
 
 <template name="addContentForm">
 	<form>
@@ -42,5 +42,5 @@
 </template>
 
 <template name="tag">
-	<input class="prettytags" type="checkbox" value = {{tagName}} /> {{tagName}}
+	<div class="prettytags"><input type="checkbox" value = {{tagName}} /> {{tagName}}</div>
 </template>
