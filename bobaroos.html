@@ -1,14 +1,18 @@
 <head>
-  <title>bobaroos</title>
+    <title>bobaroos</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+    <h1>Welcome to APPNAME!</h1>
+    <form class="feeling-submission">
+        <input type="text" name="feeling" placeholder="How are you feeling?" />
+    </form>
+    {{#each feelings}}
+        {{> expression}}
+    {{/each}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="expression">
+    Hey!
+    <p> Wow, you're feeling {{feeling}}</p>
 </template>
