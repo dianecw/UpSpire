@@ -2,9 +2,13 @@
     <title>bobaroos</title>
 </head>
 
+<body>
+    {{> Home}}
+</body>
 <template name="Home">
     <h1>I'm feeling...</h1>
-    <input class="feeling-button" type="button" value="HAPPEH">
+    <button class="feeling-button" id="SAD">SAD</button>
+    <!--<input class="feeling-button" id="HAPPEH" type="button" value="HAPPEH">-->
     <div>
     	<!-- {{#each emotion}}
     		{{> emotion-button}}
@@ -17,5 +21,4 @@
 	<!-- <input class="feelings-button" type="button">{{ emotion }}</input> -->
 </template>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
