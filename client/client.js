@@ -8,7 +8,7 @@ Template.Home.events({
 Template.Stream.helpers({
 	elements: function() {
 		var feeling = Session.get("feed-feeling");
-        return ["lol", "okay"];
+        return [{content : "CATPIC", type: "woot"}, {content : "ok"}];
 		//return Feelings.find()
 	}
 });
