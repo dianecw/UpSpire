@@ -76,6 +76,7 @@
 }
 
 .submitbutton {
+	margin-top: 20px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 20px;
@@ -91,10 +92,12 @@
 
 .tags {
 	margin: 0 auto;
-	width: 35%;
+	width: 40%;
 	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
 }
 
 .prettytags {
-	background-color: white;
+	margin: 0px 0px 10px 10px;
 }
