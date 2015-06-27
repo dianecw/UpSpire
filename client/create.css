@@ -2,6 +2,20 @@ html {
     min-height: 100%;
 }
 
+.create-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0);
+
+	padding: 20px 25px;
+	font-size: 20px;
+}
+
 .create-container {
-    padding: 5px 30px;
+	margin-top: 50px;
+    padding: 10px 15px;
+    font-size: 30px;
 }

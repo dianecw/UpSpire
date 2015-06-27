@@ -5,10 +5,11 @@ Template.Home.events({
     }
 });
 
-Template.body.helpers({
+Template.Stream.helpers({
 	elements: function() {
-		var feeling = Session.get
-		return Feelings.find()
+		var feeling = Session.get("feed-feeling");
+        return [{content : "CATPIC", type: "woot"}, {content : "ok"}];
+		//return Feelings.find()
 	}
 });
 
@@ -18,5 +19,7 @@ Router.route('/', function () {
 
 Router.route('/create');
 Router.route('/stream/:_feeling', function () {
-    Session.set("feed-feeling", this.params._feeling); 
+    console.log("stream page routing...");
+    Session.set("feed-feeling", this.params._feeling);
+    this.render('Stream');
 });

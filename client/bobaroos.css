@@ -1,3 +1,31 @@
+@font-face {
+	font-family: Olivier;
+	src: url('client/olivier.ttf');
+}
+
+html {
+	min-height: 100%;
+}
+
 body {
 	background: linear-gradient(0deg, #fef3d0, #3396bb);
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+
+h1 {
+	color: #fff;
+	font-family: Olivier;
+	font-size: 60px;
+	margin: 15%;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+.create-button {
+	padding: 10px;
 }
