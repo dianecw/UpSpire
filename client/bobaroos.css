@@ -1,6 +1,6 @@
 @font-face {
 	font-family: Olivier;
-	src: url('client/olivier.ttf');
+	src: url('client/olivier.ttf') format('truetype');
 }
 
 html {
@@ -26,8 +26,8 @@ a {
 	text-decoration: none;
 }
 
-button {
-	background-color: transparent;
+.feelingbutton {
+	background-color: rgba(255, 255, 255, 0.4);
 	border: none;
 	border-radius: 15px;
 	display: inline-block;
@@ -37,8 +37,14 @@ button {
 	text-decoration: none;
 }
 
+.feelingbutton a:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+}
 
-
-.create-button {
+.createbutton {
 	padding: 10px;
+}
+
+.emotionscontainer {
+	padding: 20px;
 }

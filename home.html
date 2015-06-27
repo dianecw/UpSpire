@@ -1,14 +1,15 @@
 <template name="Home">
     <h1>I'm feeling...</h1>
 <!--    <button class="feeling-button" id="SAD">SAD</button>-->
-
+    <div class="emotionscontainer">
     {{ #each feelings }}
 		{{ >emotionLink }}
 	{{ /each }}
+    </div>
 
-    <div><a href="/create" class="create-button">Feeling great? Share some of that happiness with others!</a></div>
+    <div><a href="/create" class="createbutton">Feeling great? Share some of that happiness with others!</a></div>
 </template>
 
 <template name="emotionLink">
-    <a href="http://localhost:3000/stream/{{feeling}}">{{feeling}}</a>
+    <a href="http://localhost:3000/stream/{{feeling}}" class="feelingbutton">{{feeling}}</a>
 </template>
