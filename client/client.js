@@ -1,3 +1,4 @@
+//~*~*~*~*~ HOME ~*~*~*~*~
 Template.Home.helpers({
     feelings: function() {
 		var feeling = Session.get("feed-feeling");
@@ -7,17 +8,15 @@ Template.Home.helpers({
 	}
 });
 
-Template.Home.events({
-    'click .feeling-button': function (event) {
-        console.log("You clicked " + event.currentTarget.innerText);
-        Router.go('/stream/' + event.currentTarget.innerText);
-    }
-});
-
+//~*~*~*~*~ STREAM ~*~*~*~*~
 Template.Stream.helpers({
+    getFeeling : function() {
+        return Session.get("feed-feeling");
+    },
 	elements: function() {
 		var feeling = Session.get("feed-feeling");
-        return [{content : "https://www.youtube.com/embed/O1KW3ZkLtuo", type: "video"}, {content : "ok", type: "text"}];
+
+        return [{content : "Inspiration goes here", type: "text"}, {content : "http://goo.gl/qGXiV2", type : "image"}];
 		//return Feelings.find()
 	}
 });
@@ -34,11 +33,15 @@ Template.element.helpers({
   }
 });
 
+
+// ~*~*~*~*~ROUTERS~*~*~*~*~
+
 Router.route('/', function () {
   this.render('Home');
 });
 
 Router.route('/create');
+
 Router.route('/stream/:_feeling', function () {
     console.log("stream page routing...");
     Session.set("feed-feeling", this.params._feeling);
