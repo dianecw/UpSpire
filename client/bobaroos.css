@@ -70,7 +70,7 @@ a {
 	padding: 30px;
 	position: relative;
 	text-align: center;
-	width: 500px;
+	max-width: 500px;
 }
 
 .navigationbar {
