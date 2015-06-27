@@ -57,8 +57,10 @@ Template.element.helpers({
     });
 
 Template.addContentForm.events({
-    'click .imageButton' : function () { // REPLACE AND ADD RADIO FUNCTIONALITY
-        Session.set("submissionType", "image");
+    'click .submitbutton' : function(event, template) {
+        var type = template.find('input:radio[name=toggle]:checked');
+        Session.set("submissiontype", $(type).val());
+        console.log("submissiontype set to " + Session.get("submissiontype"));
     },
 	'submit form': function(){
 		event.preventDefault();
@@ -77,8 +79,11 @@ Template.addContentForm.events({
 		} else {
 			var type = "text"; // default to text submission type
 		}
+		content_tags = $('input:checkbox:checked.prettytags').map(function () {
+  			return this.name;
+			}).get();
+		console.log("tags selected: " + content_tags);
 
-		var content_tags = ["Happy", "Sad"]; // REPLACE - get tags!
 		if (content_tags) {                       // set the feeling tags
 			var tags = content_tags;
 		} else {
