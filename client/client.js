@@ -8,10 +8,6 @@ Template.Home.helpers({
 	}
 });
 
-Template.Home.events({
-    // nothing here yet
-});
-
 //~*~*~*~*~ STREAM ~*~*~*~*~
 Template.Stream.helpers({
     getFeeling : function() {
@@ -19,7 +15,7 @@ Template.Stream.helpers({
     },
 	elements: function() {
 		var feeling = Session.get("feed-feeling");
-        return [{content : "HAPPEH", type: "text"}, {content : "http://goo.gl/qGXiV2", type : "image"}];
+        return [{content : "Inspiration goes here", type: "text"}, {content : "http://goo.gl/qGXiV2", type : "image"}];
 		//return Feelings.find()
 	}
 });
