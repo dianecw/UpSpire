@@ -18,8 +18,8 @@ Template.Stream.helpers({
         console.log("Querying for tag: " + tag);
 //        var data = [{content : "Inspiration goes here", type: "text"}, {content : "http://goo.gl/qGXiV2", type : "image"}];
         var data = Feelings.findOne({feeling : tag}).content;
+        console.log("Data (line below)");
         console.log(data);
-        debugger;
 		return data;
 	}
 });
