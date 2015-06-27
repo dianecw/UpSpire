@@ -11,13 +11,12 @@ Template.Home.helpers({
 //~*~*~*~*~ STREAM ~*~*~*~*~
 Template.Stream.helpers({
     getFeeling : function() {
-        return Session.get("feedfeeling");
+        return Session.get("feedfeeling").toLowerCase();
     },
 	elements: function() {
 		var tag = Session.get("feedfeeling");
         console.log("Querying for tag: " + tag);
-        //return [{content : "Inspiration goes here", type: "text"}, {content : "http://goo.gl/qGXiV2", type : "image"}];
-        debugger;
+//        var data = [{content : "Inspiration goes here", type: "text"}, {content : "http://goo.gl/qGXiV2", type : "image"}];
         var data = Feelings.findOne({feeling : tag}).content;
         console.log(data);
         debugger;
