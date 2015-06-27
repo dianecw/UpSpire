@@ -1,3 +1,11 @@
+
+body {
+	background: linear-gradient(0deg, #fef3d0, #3396bb);
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+
 .streamheader {
 	color: black;
 }
@@ -10,6 +18,7 @@
     font-size: 35px;
     background-color:rgba(255,255,255,0.6);
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 .streamelement {
@@ -32,6 +41,7 @@
 
 .textelement {
 	color: black;
+	font-family: 'Lato', sans-serif;
 }
 
 .logo {
@@ -46,9 +56,11 @@
 	display: inline;
 	color: #2f87af;
 	font-weight: normal;
+	font-family: 'Lato', sans-serif;
 }
 
 .feelingdropdown {
 	display: inline;
 	color: #2f87af;
+	font-family: 'Lato', sans-serif;
 }
