@@ -9,15 +9,6 @@ Template.body.events({
     'click .feeling-button': function (event) {
         console.log("Event" + event);
         Router.go('/stream');
-
-        // Executed when form is submitted
-//        var input = event.target.feeling.value;
-//        Feelings.insert({
-//            feeling: input,
-//            createdAt: new Date()
-//        });
-        //event.target.feeling.value("done");
-        //return false; // prevent default form behavior
     }
 });
 
