@@ -19,6 +19,18 @@ Template.Stream.helpers({
 	}
 });
 
+Template.element.helpers({
+  isText: function(type){
+    return type == "text"
+  },
+  isImage: function(type){
+    return type == "image"
+  },
+  isVideo: function(type){
+    return type == "video"
+  }
+});
+
 Router.route('/', function () {
   this.render('Home');
 });
