@@ -1,3 +1,12 @@
+Template.Home.helpers({
+    feelings: function() {
+		var feeling = Session.get("feed-feeling");
+        return [{feeling : "Happy"},
+                {feeling : "Sad"},
+                {feeling : "Mad"}];
+	}
+});
+
 Template.Home.events({
     'click .feeling-button': function (event) {
         console.log("You clicked " + event.currentTarget.innerText);
@@ -8,7 +17,7 @@ Template.Home.events({
 Template.Stream.helpers({
 	elements: function() {
 		var feeling = Session.get("feed-feeling");
-        return [{content : "CATPIC", type: "woot"}, {content : "ok"}];
+        return [{element : "CATPIC", type: "woot"}, {content : "ok"}];
 		//return Feelings.find()
 	}
 });
