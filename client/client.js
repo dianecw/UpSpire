@@ -9,7 +9,8 @@ Template.Home.helpers({
                 {feeling : "Silly"},
                 {feeling : "Discouraged"},
                 {feeling : "Heartbroken"},
-                {feeling : "Frustrated"}]
+                {feeling : "Frustrated"},
+                {feeling : "Cupcake"}]
 	}
 });
 
@@ -53,6 +54,7 @@ Template.element.helpers({
       { tagName: "Discouraged" },
       { tagName: "Heartbroken" },
       { tagName: "Frustrated" },
+        {tagName: "Cupcake"}
     ]
 });
 
