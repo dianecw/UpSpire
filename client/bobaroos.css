@@ -1,0 +1,124 @@
+html {
+	min-height: 100%;
+}
+
+body {
+	background: linear-gradient(0deg, #fef3d0, #3396bb);
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	display: block;
+	margin-top: 5%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	text-align: center;
+}
+
+.logo-nav {
+	display: block;
+	margin-top: 1%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	text-align: center;
+	height: 50%;
+}
+
+.imfeeling {
+	margin-top: 5%;
+	padding: 10px;
+	position: relative;
+}
+
+.feelingbutton {
+	background-color: rgba(255, 255, 255, 0.4);
+	border: none;
+	border-radius: 15px;
+	color: #3396bb;
+	display: inline-block;
+	margin: 5px;
+	padding: 10px;
+	position: relative;
+	text-decoration: none;
+}
+
+.feelingbutton:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.feelingbutton a:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.createbutton {
+	color: #3396bb;
+	display: block;
+	padding: 20px;
+}
+
+.createbutton:hover {
+	color: #246983;
+}
+
+.emotionscontainer {
+	display: block;
+	margin: auto;
+	padding: 30px;
+	position: relative;
+	text-align: center;
+	max-width: 500px;
+}
+
+.navigationbar {
+	background-color: white;
+	width: auto;
+	text-align: center;
+}
+
+#navigationbar ul {
+	list-style: none;
+	margin: 0;
+	line-height: 1;
+	zoom: 1;
+	text-align: center;
+	padding-right: 30px;
+}
+
+#navigationbar ul:after {
+	content: " ";
+	display: block;
+	font-size: 0;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#navigationbar ul li {
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+}
+
+#navigationbar ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	padding: 0px 10px 10px 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 14px;
+	position: relative;
+	text-align: center;
+}
+
+#navigationbar ul li a:hover {
+	color: #efefef;
+}

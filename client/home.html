@@ -1,0 +1,16 @@
+<template name="Home">
+	<img class="logo" src="logo.png">
+    <img class="imfeeling" src="imfeeling.png">
+
+    <div class="emotionscontainer">
+        {{ #each feelings }}
+            {{ >emotionLink }}
+        {{ /each }}
+    </div>
+
+    <div><a href="/create" class="createbutton">Feeling great? Share some of that happiness with others!</a></div>
+</template>
+
+<template name="emotionLink">
+    <a href="/stream/{{feeling}}" class="feelingbutton">{{feeling}}</a>
+</template>

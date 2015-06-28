@@ -1,0 +1,121 @@
+.createheader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0);
+
+	padding: 15px 20px;
+	font-size: 20px;
+	text-align: left;
+}
+
+.createcontainer {
+	margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 35px;
+}
+
+form {
+	padding: 20px;
+}
+
+.subtitle {
+	margin-top: 10px 0px;
+	font-size: 25px;
+}
+
+.createchoices {
+	margin-top: 25px;
+}
+
+.createchoices label {
+	width: 120px;
+	height: 45px;
+	margin: 0px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.createchoices label span {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 35px;
+	margin: 30px;
+}
+
+.createchoices label input {
+	position: absolute;
+	top: -20px;
+}
+
+.createchoices label:hover {
+	color: white;
+}
+
+.createchoices input:checked + span {
+	color: #fef3d0;
+	font-weight: bold;
+}
+
+.createcontent {
+	margin: 35px auto 0px auto;
+	font-size: 20px;
+	width: 80%;
+}
+
+.createcontent input {
+	font-size: 30px;
+	height: 30px;
+	width: 90%;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+.createcontenttext {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.tags {
+	margin: 5px auto;
+	width: 50%;
+	font-size: 20px;
+	text-align: center;
+}
+
+.prettytags {
+	display: inline-block;
+	margin: 0px 0px 10px 10px;
+}
+
+.submitbutton {
+	margin-top: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #fff;
+	padding: 10px;
+	background-color: rgba(51, 150, 187, 0.7);
+	border: none;
+	border-radius: 15px;
+}
+
+.submitbutton:hover {
+	background-color: rgba(51, 150, 187, 0.5);
+}
+
+.tags {
+	margin: 0 auto;
+	max-width: 500px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
+}
+
+.prettytags {
+	margin: 0px 0px 10px 10px;
+}
